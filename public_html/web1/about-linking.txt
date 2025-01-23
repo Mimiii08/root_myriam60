@@ -1,0 +1,18 @@
+./ = means "here", in current folder
+../ = exit current folder (go to parent folder)
+/ = goes to utmost root folder / root level of domain
+
+file:/// + browse files and folders offline (works in chrome)
+
+http:// = open external web adress 
+https:// = open external web adress with SSL encryption
+
+
+
+to link this :
+<p><a> href "./
+
+in html under tittle:
+<link rel= "stylesheet" href="css/style.css">
+
+in web 1 make new folder "css"

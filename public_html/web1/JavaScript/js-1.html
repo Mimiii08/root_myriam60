@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS- Demo 1</title>
+    <style>
+        body{ background-color: rgb(233, 157, 173);}
+    </style>
+</head>
+<body>
+    <h1>JavaScript - Demo 1</h1>
+    <h2>live laugh love pasta</h2>
+     <!-- <audio src="sounds/pasta-salad-2-99673.mp3"></audio> -->
+      <!-- <audio src="sounds/cartoon-slurp-37066.mp3"></audio> -->
+
+    <main id="content">loading</main>
+
+     <button onclick="eatPasta()">Click me!</button>
+
+        <script>
+
+            alert("Hi world ;D");
+            console.log("page loaded successfully")
+
+            //Variables
+            //dynamic variable type "let"(data can be changed)
+            let myName= "Myriam";
+
+            myName = "Michael??";
+
+            console.log(myName);
+            
+            // constant variable (data can't be changed)
+            const pi = 3.14159;
+
+            console.log(pi * 5);
+
+            /// mixed message logging
+            // uses + to concatenate strings with other strings or data 
+            //string = textual data, in quotes
+            console.log( "pi times 5" + pi*5);
+
+            let mySound = new Audio("sounds/cartoon-slurp-37066.mp3");
+
+            const myContent = document.getElementById("content");
+
+
+            function eatPasta() {
+                //alert("omnomnom");
+                mySound.play();
+                myContent.innerHTML = '<h2>yummy</h2><img src="https://metro.co.uk/wp-content/uploads/2016/07/pasta_1550232991.jpg?quality=90&strip=all"/>'
+            }
+            
+               
+        </script>
+
+</body>
+</html>

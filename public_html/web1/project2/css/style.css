@@ -1,0 +1,52 @@
+
+html{
+    overflow-x: hidden;
+}
+body{
+    text-align: center;
+    font-family:"Lilita One", sans-serif;
+    perspective: 350px;
+    padding-top: 325px;
+    font-size: 15px;
+    color: cadetblue;
+    background-color: rgb(215, 232, 200);
+
+
+}
+
+img{
+    width: 480px;
+}
+
+#panel{
+    align-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(175, 195, 148);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-style: preserve-3d;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.slide-up{
+ transform: translateY(-50%) rotateX(70deg);
+}
+
+#game{
+    padding: 10px 30px;
+    font-size: 2.4rem;
+    background-color: rgb(95, 128, 95);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 20px black;
+    cursor: pointer;
+}

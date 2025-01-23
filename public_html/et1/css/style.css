@@ -1,0 +1,39 @@
+/* basic reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img{
+    width: 100%;
+   /* max-width: 450px; */
+}
+nav{
+    background-color: palevioletred;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.44rem;
+    justify-items: center;
+}
+#gallery{
+    background-color: pink;
+    display: grid;
+    gap: 1.44rem;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+@media screen and (min-width: 450px){
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+    @media screen and (min-width: 900px){
+        #gallery{
+            /* grid-template-columns: 2fr 30rem 300px; */
+        }
+    }

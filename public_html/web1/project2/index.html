@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Broco-man</h1>
+    <img src="img/brocoli man.svg" alt="">    
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore accusantium dolor officiis quo magni 
+        laudantium incidunt sint temporibus omnis amet, obcaecati quis debitis repellat illum quidem consequuntur minima tenetur ullam!
+    </p>
+    <h3>design process</h3>
+<img src="img/20241120010028_IMG_1134.PNG" alt="">
+ <br>
+ <button id="game" onclick="top.location.href='../project3/'">play game</button>
+
+    <div id="panel"> click to open</div>
+
+    <script>
+
+        const panel = document.getElementById("panel");
+        const sound = new Audio("sounds/whoosh.mp3")
+
+        panel.onclick = function(){
+            this.classList.toggle("slide-up")
+            sound.play();
+        }
+
+    </script>
+</body>
+</html>

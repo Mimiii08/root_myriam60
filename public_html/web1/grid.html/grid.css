@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+    /*limit width for TVS etc */
+    max-width:  2000px;
+    /* center grid*/
+    position:relative;
+    margin: 0 auto;
+
+
+}
+#container div{
+    min-height: 300px;
+    background-color: palevioletred;
+    height: fit-content;
+}
+.grid-item.a{
+    background-color: palevioletred;
+}
+.grid-item.b{
+    background-color: rgb(159, 41, 80);
+}
+.grid-item.c{
+    background-color: rgb(255, 81, 139);
+}
+.grid-item.d{
+    background-color: rgb(246, 189, 208);
+}
+.grid-item.e{
+    background-color: rgb(255, 139, 177);
+}
+.grid-item.f{
+    background-color: rgb(121, 4, 43);
+}
+.grid-item.g{
+    background-color: rgb(238, 50, 113);
+}
+
+.polaroid {
+    border: 20px solid white;
+    border-bottom: 60px solid white;
+    box-shadow: 2px 10px 13px rgba(85, 15, 45, 0.46);
+
+}
+
+.grid-item img {
+    width: 100%;
+}
+/* override | fix for frame height */
+.grid-item.b{
+   /* height: 260px; */
+    min-height: unset;
+    background-color: white;
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px){
+    #container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+/*mobile*/
+@media screen and (max-width: 430px){
+    #container {
+        grid-template-columns: 1fr;
+    }
+body{
+    background-color: rgb(120, 205, 216);
+}
+}

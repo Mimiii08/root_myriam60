@@ -1,0 +1,205 @@
+/* basic reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 22px;
+    line-height: 44px;
+    color: rgb(98, 33, 44);
+    background-color: rgb(236, 198, 195);
+    background-image: url(yue-ma-PaYPQWQV6B8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(236, 198, 195);
+    padding: 10px;
+    /*position: fixed; */
+
+}
+
+nav {
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+    color:#340303;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color:#340303;
+  
+}
+nav a{
+    color: rgb(165, 74, 87);
+    font-size: 1.0em;
+}
+nav a:hover{
+    color: palevioletred;
+}
+#banner {
+    background-image: url(../img/banner.png);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+
+}
+
+
+main,footer{ 
+    padding: 20px;
+}
+main article p {
+    max-width: 60ch;
+    position: relative; margin:0 auto;
+   
+}
+main {
+    background-color:  rgb(236, 198, 195);
+    padding-top: 70px;
+    font-size: 12px;
+ 
+   
+}
+footer {
+    background-color: rgb(236, 198, 195);
+    font-size: 10px;
+}
+
+ 
+.fancy-button{
+    background-color: rgb(165, 74, 87);
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #36052183;
+    border: 5px double pink;
+    color: pink;
+    font-weight: bold;
+}
+.fancy-button:hover {
+    background-color: rgb(255, 161, 180);
+    color: palevioletred;
+    rotate: 2deg;
+}
+/* Styling the form */
+
+input[type=text],
+input[type=password],
+input[type=submit],
+textarea{
+    display: block;
+    padding: 10px;
+    border: 1px solid pink;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    width: 260px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(277px, 1fr) );
+    gap: 2px;
+    background-color: rgb(216, 152, 152);
+    color: white;
+    font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal ;
+  text-align: center;
+}
+
+
+#logo{
+    position: relative;
+    top: 40px;
+    left: -20px;
+}
+
+#title-box{
+    position: relative;
+    top: -30px;
+}
+
+#title-box p{
+    color: #340303;
+    font-size: 20px ;
+
+}
+h1{
+    color: #85373F;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+line-height: normal;
+position: relative; margin:0 auto;
+margin-left: 30px;
+
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300; ;
+}
+#about{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(17, 0, 0);
+  margin-top: -4ch;
+  margin-bottom: 4ch;
+  font-size: 20px
+}
+
+#interests{
+    background-color:rgb(216, 152, 152);
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300; ;
+    color: white;
+}
+
+#contact{
+    background-color: rgb(141, 85, 92);
+
+    text-align: center;
+    
+}
+
+#footer{
+    background-color: rgb(236, 198, 195);
+    font-family: "Merriweather", serif;
+}
+
+button{
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color:rgb(216, 152, 152);
+    margin-top: 20vh;
+    border: none;
+ 
+
+}
+
+.center{
+    display: inline-block;
+    max-width: 70px;
+    min-width: 70px;
+    
+}
