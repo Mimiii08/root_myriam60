@@ -380,8 +380,14 @@ input:checked + label .description {
 }
     
 /*--------------------svg animation-------------------*/
+
 .game svg{
-  width: 600px;
+  width: 300px;
+  align-items: center;
+}
+.squats{
+  columns: 1fr 1fr;
+  text-align: justify;
 }
 .squats #body:hover{
  animation: squats;
@@ -450,6 +456,33 @@ animation-duration:4s;
 }
 
 /*-------------transformation------------*/
+
+.image-container {
+  width: 200px; 
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container img.second {
+  opacity: 0;
+}
+
+.image-container:hover img.first {
+  opacity: 0;
+}
+
+.image-container:hover img.second {
+  opacity: 1;
+}
+
 
 
 
