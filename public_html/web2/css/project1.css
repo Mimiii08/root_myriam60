@@ -1,0 +1,546 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    height: 100%;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+/*VARIABLES CSS*/
+:root {
+    /*Colors*/
+    --first-color: rgb(143,191,218);
+    --title-color: rgb(231,232,231);
+    --text-color: rgb(255, 255, 255);
+    --body-color: rgb(34,48,63);
+    --container-color: rgb(44,100,133);
+  
+    /*Fonts*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+  }
+  
+  /*responsive typography*/
+  @media screen and (min-width: 1120px) {
+    :root {
+      --h2-font-size: 1.5rem;
+      --small-font-size: .875rem;
+    }
+  }
+
+  /*banner*/
+  .banner{
+    width: 100% ;
+    height: 500px ;
+    object-fit: cover;
+  }
+  .banner_container{
+    width: 100% ;
+    height: 500px ;
+    position: relative;
+  }
+  .banner_container h1{
+     position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgb(143,191,218, 0.8);
+    border-radius: 1.5rem;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 26px;
+  }
+
+  /*header*/  
+
+  header {
+    background-color: rgb(217, 126, 138);
+    color: rgb(255, 255, 255);
+  padding-inline-end: 20px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 25px;
+}
+header img{
+  width: 50px;
+  height: 50px;
+}
+header h1{
+    color: rgb(255, 255, 255);
+    text-align: center ;
+}
+
+a:link{
+    transition: color 0.5s;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        background: rgb(143,191,218, 0.8);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        z-index: 100;
+      }
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: 0.5s;
+      }
+      .header:hover::before {
+        left: 100%;
+      }
+      .logo {
+        color: #fff;
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: default;
+      }
+      .navbar a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 35px;
+        transition: 0.3s;
+      }
+      .navbar a:hover {
+        color:var(--first-color);
+      }
+
+      /* BREAKPOINTS */
+      @media (max-width: 992px) {
+        .header {
+          padding: 1.25rem 4%;
+        }
+      }
+      @media (max-width: 768px){
+        #menu-icon {
+          display: block;
+        }
+        .navbar {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          padding: 0.5rem 4%;
+          display: none;
+        }
+        .navbar.active {
+          display: block;
+        }
+        .navbar a {
+          display: block;
+          margin: 1.5rem 0;
+        }
+        .nav-bg {
+          position: absolute;
+          top: 79px;
+          left: 0;
+          width: 100%;
+          height: 295px;
+          background: rgba(143,191,218, 0.8);
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(10px);
+          z-index: 99;
+          display: none;
+        }
+        .nav-bg.active {
+          display: block;
+        }
+      }
+      main{
+        min-height: 100%;
+      padding-bottom: 50px;
+      }
+
+      /*--------FOOTER----------*/
+
+      footer{
+       height: 50px;
+       position: relative;
+        width: 100%;
+        padding: 5px 100px;
+        background: rgb(143,191,218, 0.8);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
+        z-index: 100;
+      }
+      .footer a{
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 35px;
+        transition: 0.3s;
+      }
+      .footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: 0.5s;
+      }
+      .footer:hover::before {
+        left: 100%;
+      }
+      .footer a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 35px;
+        transition: 0.3s;
+        align-items: center;
+        justify-content: space-between;
+
+
+      }
+      .footer a:hover {
+        color:var(--first-color);
+      }
+
+
+      /*-----------CARDS--------------*/
+      h1{
+        padding-top: 45px;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+
+ 
+      .wrapper {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        columns: 1fr 1fr 1fr;
+    }
+    
+    .container {
+        height: 400px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+    
+    .card {
+        width: 80px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier(.28,-0.03,0,.99);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    
+    .card > .row {
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .card > .row > .icon {
+        background:var(--first-color);
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    
+    .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 80px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+    }
+    
+    .description p {
+        color: #10292f;
+        padding-top: 5px;
+    }
+    
+    .description h4 {
+        text-transform: uppercase;
+    }
+    
+    input {
+      display: none;
+  }
+  
+
+  input:checked + label {
+    width: 600px;
+    height: 400px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+  
+    
+    
+  
+    
+    .card[for="c1"] {
+        background-image: url('../imgs/arms-img.png');
+    }
+    .card[for="c2"] {
+        background-image: url('../imgs/back-img.png');
+    }
+    .card[for="c3"] {
+        background-image: url('../imgs/ABS-img.png');
+    }
+    .card[for="c4"] {
+        background-image: url('../imgs/legs-img.png');
+    }
+    .card[for="c5"] {
+      background-image: url('../imgs/shoulders-img.png');
+  }
+  .card[for="c6"] {
+    background-image: url('../imgs/chest-img.png');
+}
+.card[for="c7"] {
+  background-image: url('../imgs/proteinnn.jpg');
+}
+.card[for="c8"] {
+  background-image: url('../imgs/omega.jpeg');
+}
+.card[for="c9"] {
+  background-image: url('../imgs/noodles-516635_1920.jpg');
+}
+.card[for="c10"] {
+  background-image: url('../imgs/fruitsveggies.jpg');
+}
+.card[for="c11"] {
+  background-image: url('../imgs/playing-cards-9322164_1920.jpg');
+}
+.card[for="c12"] {
+  background-image: url('../imgs/playing-cards-9322164_1920.jpg');
+}
+    
+/*--------------------svg animation-------------------*/
+.game svg{
+  width: 600px;
+}
+.squats #body:hover{
+ animation: squats;
+animation-duration:4s;
+}
+@keyframes squats{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateY(200px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.biceps #right{
+  animation: curls;
+  animation-duration: 3s;
+}
+
+
+@keyframes curls{
+  0%{
+    transform: rotateZ(0deg);
+  }
+    50%{
+      transform: rotateZ(-1deg)translateX(-100px)
+    }
+
+    100%{
+      transform: rotateZ(0deg);
+    }
+  }
+
+.pushups #body:hover{
+ animation: squats;
+animation-duration:4s;
+}
+@keyframes squats{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateY(200px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.pushups #forearm:hover body{
+  animation: arm;
+ animation-duration:4s;
+ }
+@keyframes arm{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateX(-55px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+/*-------------transformation------------*/
+
+
+
+
+
+/*-----------------gymsvg-----------------*/
+.cls-1 {
+  fill: #fff;
+}
+
+#gym .cls-2 {
+  fill: #5c6a7a;
+}
+
+.cls-3 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+.cls-4 {
+  fill: #8fa9bb;
+}
+
+.cls-5 {
+  fill: #fff2c4;
+}
+
+.cls-6 {
+  fill: #caebfc;
+}
+
+.cls-7 {
+  fill: #456685;
+}
+
+.cls-8 {
+  fill: #5a5b5d;
+}
+
+.cls-9 {
+  fill: #394a56;
+}
+#gym svg{
+  width: 170vw;
+}
+/*animation style*/
+#background{
+  animation: skyline 48s ease-in-out infinite alternate-reverse;
+
+}
+
+#third{
+  animation: skyline 30s ease-in-out infinite alternate;
+
+}
+
+#second{
+  animation: skyline 18s ease-in-out infinite alternate-reverse;
+
+}
+
+#first{
+animation: skyline 12s ease-in-out infinite alternate;
+}
+
+#road{
+  animation: skyline 5s ease-in-out infinite alternate;
+
+}
+#gym{
+  animation: skyline 10s ease-in-out infinite alternate;
+
+}
+#first{
+  animation: skyline 12s ease-in-out infinite alternate;
+  }
+
+@keyframes skyline{
+  0%{
+      transform: translateX(-20vw);
+  }
+  100%{
+      transform: translateX(-45);
+  }
+}
+
+
+/*------------progress-------------*/
+.transformation img{
+  text-align: center;
+}
+
+

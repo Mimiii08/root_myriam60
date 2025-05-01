@@ -1,0 +1,52 @@
+.cls-1 {
+    fill: #830037;
+  }
+
+.cls-2 {
+    fill: #c15b7b;
+  }
+.cls-3 {
+    fill: #fff2c4;
+  }
+
+.cls-4 {
+    fill: #f1b8c6;
+  }
+
+#skyline{
+overflow: hidden;
+
+}
+svg{
+    width: 200vw;
+}
+
+
+/*animation style*/
+#background{
+    animation: skyline 48s ease-in-out infinite alternate-reverse;
+
+}
+
+#third{
+    animation: skyline 30s ease-in-out infinite alternate;
+
+}
+
+#second{
+    animation: skyline 18s ease-in-out infinite alternate-reverse;
+
+}
+
+#gym{
+animation: skyline 20s ease-in-out infinite alternate;
+}
+
+@keyframes skyline{
+    0%{
+        transform: translateX(-20vw);
+    }
+    100%{
+        transform: translateX(-45);
+    }
+}
