@@ -1,0 +1,94 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.playfair {
+    font-family: "Playfair", serif;
+    font-style: normal;
+    font-variation-settings:"width" 100;
+  }
+
+  .abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+  }  
+  
+:root {
+    --white:#FAF2EC ;
+    --blue:#37767D;
+    --red:#6B2A2A;
+    --gold:#C5985D;
+    --orange:#B07961;
+    --green:#72694B;
+    --dark-orange:#924D30;
+    --bebas-font: "Bebas Neue", sans-serif;
+    --fancy-light-font:"playfair", serif;
+    --fancy-bold-font:"Abril fatface", serif;
+    --text-font:"roboto", sans-serif;
+    --nav-F-size: 30px;
+    
+}
+
+
+.navbar{
+    background-color: var(--orange);
+    color: var(--red);
+    font-family: var(--bebas-font);
+    font-size: var(--nav-F-size);
+}
+
+
+.banner{
+    background-color: var(--blue);
+    width: 100% ;
+    height: 500px ;
+    object-fit: cover;
+  }
+  .banner_container{
+    width: 100% ;
+    height: 500px ;
+    position: relative;
+  }
+  .banner_container h1{
+    position: absolute;
+   left: 50%;
+   top: 80%;
+   transform: translate(-50%, -50%);
+   color: white;
+   background: rgb(143,191,218, 0.8);
+   border-radius: 1.5rem;
+   text-decoration: none;
+   padding: 10px;
+   font-size: 26px;
+  }
+
+
+body{
+    background-color: var(--white);
+}
+
+.story{
+    h2{
+        font-family: var(--fancy-bold-font);
+    }
+    p{
+        font-family: var(--text-font)
+
+    }
+}
+
+
+.countries{
+    font-family: var(--bebas-font);
+    color: var(--gold);
+    background-color: var(--blue);
+}
