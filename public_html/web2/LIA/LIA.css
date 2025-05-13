@@ -92,3 +92,11 @@ body{
     color: var(--gold);
     background-color: var(--blue);
 }
+
+
+.footer{
+      background-color: var(--orange);
+    color: var(--red);
+    font-family: var(--bebas-font);
+    font-size: var(--nav-F-size);
+}
