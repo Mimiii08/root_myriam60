@@ -1,0 +1,80 @@
+body{
+    background-color:#F4C2C2;
+}
+
+#gametitle{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: #aa5261;
+}
+
+
+#message{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: beige;
+
+}
+#players{
+    text-align: center;
+   h2 {
+    font-family: "Bebas Neue", sans-serif;
+    display: inline-block;
+   }
+
+}
+
+
+
+#restartbutton {
+display: block;
+margin-top: 15px;
+
+margin-left: auto;
+margin-right: auto;
+height: 40px;
+width: 150px;
+background-color: #aa5261;
+border: 1px solid #ac6c6c;
+border-radius: 40px;
+font-size: 18px;
+color: beige;
+font-family: "Bebas Neue", sans-serif;
+
+
+}
+
+#restartbutton:hover{
+    background-color: #aa5261;
+}
+
+
+
+
+
+#board{
+    margin: auto;
+    text-align: center;
+    width: 30vmin;
+    height: 30vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+    border:1px solid #aa52616d;
+    font-size: 40px;
+    width: 10vmin;
+    height: 10vmin;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: #aa52616d;
+
+}
+
+.box:hover{
+    background-color: #aa5261ba;
+}
